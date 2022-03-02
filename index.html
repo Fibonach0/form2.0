@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p><b>This text is bold</b></p>
+    <p><i>This text is italic</i></p>
+    <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" value="John"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "ignacio.antu@gmail.com",
+        Password: "mizruofwtvwnozre",
+        To: 'ignacio.antu@gmail.com',
+        From: "ignacio.antu@gmail.com",
+        Subject: "This is the subject",
+        Body: "And this is the body"
+    }).then(
+        message => alert(message)
+    ); <
+    /html>
